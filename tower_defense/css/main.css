@@ -1,0 +1,13 @@
+.right {
+    float:right;
+}
+.canvas {
+    float:left;
+    margin-right: 10px;
+    background-image: url(../img/tower_background.png);
+}
+.tower {
+    display:inline-block;
+    padding: 5px;
+    border: 1px solid;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5/Canvas/Javascript tower defense game</title>
+    <meta name="description" content="用JavaScript和Canvas做的塔防游戏">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <canvas id='canvas' class='canvas' width='600' height='600' style='border:1px solid #000;'>需要canvas才能运行</canvas>
+    <div class='tower' style='background-color: green;' onclick='changeTower(0);'>
+        炮台 1
+        <br>
+        范围: 中
+        <br>
+        伤害: 中
+        <br>
+        速度: 中
+        <br>
+        耗费: 50
+    </div>
+    <p>
+        <div class='tower' style='background-color: brown;' onclick='changeTower(1);'>
+            炮台 2
+            <br>
+            范围: 大
+            <br>
+            伤害: 中
+            <br>
+            速度: 高
+            <br>
+            耗费: 75
+        </div>
+        <p>
+            <div class='tower' style='background-color:aqua;' onclick='changeTower(2);'>
+                炮台 3
+                <br>
+                范围: 小
+                <br>
+                伤害: 高
+                <br>
+                速度: 中
+                <br>
+                耗费: 75
+            </div>
+            <br>
+            <div style='width:600px;'>
+                敌人的得分:
+                <span id='attackersScore'>0</span>
+                <span class='right'>金钱: <span id='money'>250</span></span>
+                <br>
+                玩家的得分: <span id='stopped'>0</span>
+            </div>
+            <script type='text/javascript' src='js/mainLoop.js'></script>
+            <script type='text/javascript' src='js/attackerUnits.js'></script>
+            <script type='text/javascript' src='js/towerUnits.js'></script>
+            <script type='text/javascript' src='js/bullets.js'></script>
+            <script type='text/javascript' src='js/mouseClick.js'></script>
+</body>
+
+</html>
